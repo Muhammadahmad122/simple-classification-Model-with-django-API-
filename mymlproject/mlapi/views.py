@@ -34,8 +34,7 @@ def process_file(request):
             img = img.resize((180, 180)) 
             img_array = keras.utils.img_to_array(img)
             img_array = keras.ops.expand_dims(img_array, 0)
-            # img_array = np.array(img) / 255.0  
-            # img_array = np.expand_dims(img_array, axis=0)
+            
             print(f"Processed image shape: {img_array.shape}")
   
 
